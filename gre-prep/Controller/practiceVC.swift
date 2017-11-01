@@ -15,6 +15,7 @@ class practiceVC: UIViewController {
     @IBOutlet weak var practSentenceLbl: UILabel!
     @IBOutlet weak var practCorrectScoreLbl: UILabel!
     @IBOutlet weak var practMistakesScoreLbl: UILabel!
+    @IBOutlet weak var popup: UIView!
     
     // Buttons
     @IBOutlet weak var ans1Btn: UIButton!
@@ -38,23 +39,24 @@ class practiceVC: UIViewController {
         showAlert()
     }
 
-    // Define a view
-    var popup:UIView!
+ 
+    
+    
+    
+    
+    //MAKING THE DISAPPERING VIEW TO SHOW IF Q ANSWERED CORRECTLY
+
     func showAlert() {
-        // customise your view
-        popup = UIView(frame: CGRect(x: 100, y: 200, width: 200, height: 200))
-        popup.backgroundColor = UIColor.red
-        
         // show on screen
-        self.view.addSubview(popup)
+        popup.isHidden = false
         
         // set the timer
         Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(self.dismissAlert), userInfo: nil, repeats: false)
     }
     
     @objc func dismissAlert(){
-        if popup != nil { // Dismiss the view from here
-            popup.removeFromSuperview()
+        if popup.isHidden == false {
+            popup.isHidden = true
         }
     }
 }
