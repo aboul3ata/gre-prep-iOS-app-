@@ -13,6 +13,8 @@
 		41C5CC621FA5A611005ACD91 /* gre_prep.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 41C5CC601FA5A611005ACD91 /* gre_prep.xcdatamodeld */; };
 		41C5CC641FA5A611005ACD91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41C5CC631FA5A611005ACD91 /* Assets.xcassets */; };
 		41C5CC671FA5A611005ACD91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41C5CC651FA5A611005ACD91 /* LaunchScreen.storyboard */; };
+		41EFC54E1FA9EBCB006F63CC /* practiceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EFC54D1FA9EBCB006F63CC /* practiceVC.swift */; };
+		41EFC5501FA9EF3B006F63CC /* wordGRE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EFC54F1FA9EF3B006F63CC /* wordGRE.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		41C5CC631FA5A611005ACD91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		41C5CC661FA5A611005ACD91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		41C5CC681FA5A611005ACD91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41EFC54D1FA9EBCB006F63CC /* practiceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = practiceVC.swift; sourceTree = "<group>"; };
+		41EFC54F1FA9EF3B006F63CC /* wordGRE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wordGRE.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,9 @@
 		41C5CC581FA5A611005ACD91 /* gre-prep */ = {
 			isa = PBXGroup;
 			children = (
+				41EFC54C1FA9EB85006F63CC /* Controller */,
+				41EFC54B1FA9EB80006F63CC /* View */,
+				41EFC54A1FA9EB79006F63CC /* Model */,
 				41C5CC591FA5A611005ACD91 /* AppDelegate.swift */,
 				41C5CC5B1FA5A611005ACD91 /* ViewController.swift */,
 				41C5CC5D1FA5A611005ACD91 /* Main.storyboard */,
@@ -65,6 +72,29 @@
 				41C5CC601FA5A611005ACD91 /* gre_prep.xcdatamodeld */,
 			);
 			path = "gre-prep";
+			sourceTree = "<group>";
+		};
+		41EFC54A1FA9EB79006F63CC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				41EFC54F1FA9EF3B006F63CC /* wordGRE.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		41EFC54B1FA9EB80006F63CC /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		41EFC54C1FA9EB85006F63CC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				41EFC54D1FA9EBCB006F63CC /* practiceVC.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,9 +169,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41EFC5501FA9EF3B006F63CC /* wordGRE.swift in Sources */,
 				41C5CC5C1FA5A611005ACD91 /* ViewController.swift in Sources */,
 				41C5CC621FA5A611005ACD91 /* gre_prep.xcdatamodeld in Sources */,
 				41C5CC5A1FA5A611005ACD91 /* AppDelegate.swift in Sources */,
+				41EFC54E1FA9EBCB006F63CC /* practiceVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
